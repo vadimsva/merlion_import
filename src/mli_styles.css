@@ -1,0 +1,57 @@
+#mli_wrapper {}
+
+h1:after {content:'';clear:both;display:table}
+h1 > span {font-size:12px;color:#777;margin-right:-13px;float:right;clear:both;line-height:20px;margin-top:-2px}
+.js .postbox .hndle {cursor:default!important}
+
+.col {display:flex;flex-wrap:wrap;margin:0 -15px}
+.col:after {content:'';clear:both;display:table}
+* [class^=col-] {float:left;margin:0 15px;box-sizing:border-box}
+* [class^=col-]:empty {display:none}
+.col-30 {width:calc(30% - 30px)}
+.col-50 {width:calc(50% - 30px)}
+.col-70 {width:calc(70% - 30px)}
+
+
+.notify_popup {position:fixed;z-index:100;background:#fff;border:1px solid #ddd;box-shadow:0 2px 6px rgba(0,0,0,0.1);top:60px;right:20px;padding:20px;display:none;border-left:4px solid #0085BA}
+.notify_popup.err {border-left-color:red}
+
+
+.catList_box {}
+.selectedDate_box {}
+.selectedDate_box h3 {}
+.shipmentType_box label,
+.selectedDate_box label,
+.priceSettings_box label,
+.importSchedule_box label {line-height:28px;display:inline-block}
+input[name="selected_date"] {vertical-align:top;margin-left:10px;width:100px}
+.only_avail {border-top:1px solid #eee;padding-top:5px;margin-top:5px}
+.importSchedule_box {position:relative}
+.importSchedule_box h3 {}
+.importSchedule_box label+select {vertical-align:top;margin-left:10px}
+.importSchedule_box.disabled:after {content:'';position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(255,255,255,0.3);z-index:10}
+.priceSettings_box {}
+input[name="exrate"] {vertical-align:top;margin-left:10px;width:40px}
+.schedule_plan_box {position:relative;margin-left:24px;border:1px solid #eee;padding:10px;background:#fafafa;border-left:4px solid #ddd;margin-top:2px}
+.schedule_plan_box.disabled:after {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:2;background:rgba(255,255,255,0.3)}
+.cron_exec {margin-top:15px}
+.cron_exec input {width:100%}
+
+#catList {margin:0 -5px;display:block!important}
+#catList:after {content:'';clear:both;display:table}
+#catList label {display:block;line-height:20px;padding:8px 15px;cursor:pointer;margin-bottom:1px}
+#catList label:hover {background:#eee}
+#catList label.active {background:#0085BA;color:#fff}
+#catList > div {width:calc(33.333% - 10px);height:676px;overflow:auto;float:left;border:1px solid #ddd;background:#fff;box-sizing:border-box;margin:0 5px;padding-bottom:10px}
+#catList .box1 {padding-top:10px}
+#catList .box2 > label {display:none;padding-left:25px}
+#catList .box3 > label {display:none;padding-left:35px}
+#catList label.show {display:block}
+#catList .cat {font-weight:bold;color:#777;line-height:20px;padding:8px 15px;border-bottom:1px solid #eee;margin-top:10px}
+
+.hint {margin-bottom:25px;background:#F7E9CA;padding:10px;box-shadow:0 1px 1px rgba(0,0,0,.04);border:1px solid #EADAB7;border-left:4px solid #E6AC29}
+
+.page-title-action:not([disabled="disabled"]) {cursor:pointer}
+.page-title-action[disabled="disabled"]:hover {background:#f7f7f7!important;border-color:#ccc!important;color:#777!important}
+.button.action_btn {padding:10px 30px;line-height:20px;height:40px;margin-right:20px;margin-top:25px;text-transform:uppercase;font-weight:bold}
+.button.import_price_btn {display:none}
