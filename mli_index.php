@@ -4,7 +4,7 @@ Plugin Name: Merlion Import
 Description: Merlion Import for Woocommerce.
 Version: 0.26
 Author: vadimsva
-Author URI: http://trendwebsites.ru
+Author URI: 
 */
 
 defined( 'ABSPATH' ) or die( 'Plugin file cannot be accessed directly.' );
